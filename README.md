@@ -4,9 +4,9 @@
 import random
 
 
-choices = ("rock" , "paper" , "sessior")
+choices = ("rock" , "paper" , "scissor")
 
-user = input("Enter rock , paper , sessior : ")
+user = input("Enter rock , paper , scissor : ")
 
 computer = random.choice(choices)
 
@@ -16,9 +16,9 @@ print("Computer choice",computer)
 if user == computer:
     print("Thats the tie ")
 
-elif (user == "rock" and computer == "sessior") or \
+elif (user == "rock" and computer == "scissor") or \
      (user == "paper" and computer == "rock") or \
-     (user == "sessior" and computer == "paper"):
+     (user == "scissor" and computer == "paper"):
     print("You win the game ")
 else : 
     print("You loss the game")
